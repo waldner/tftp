@@ -28,6 +28,7 @@ func NewServer(readHandler func(filename string, rf io.ReaderFrom) error,
 		wg:                &sync.WaitGroup{},
 	}
 	s.cancel, s.cancelFn = context.WithCancel(context.Background())
+	fmt.Println("AAAAAAAAAAAAAAAAAAAAAAAAAAA")
 	return s
 }
 
